@@ -1,11 +1,119 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy policy — Twitch Song Helper</title><style>body{max-width:850px;margin:40px auto;padding:0 22px;font:17px/1.75 system-ui;color:#282333}a{color:#604398}h1{line-height:1.35}</style><nav><a href="privacy-zh-TW.html">繁體中文</a> · <a href="privacy-en.html">English</a> · <a href="privacy-ja.html">日本語</a></nav><h1>Privacy Policy — Twitch Song Helper
-Prepared: October 26, 2026. Publisher/support: <a href="https://www.twitch.tv/kousakilol">kousakilol</a>.</h1><h2>What the extension processes
-After you manually start listening, the extension reads the displayed chat in the selected Twitch tab. It processes public display names, message identifiers and song-request text. Accepted requests, song titles/artists, request/completion times, skipped/sung status, session counts, commands, preferences and repertoire/search caches are stored in your browser&#x27;s extension storage. Ordinary chat messages are processed transiently; the extension keeps the last-message timestamp, not a general chat archive.</h2><h2>Network requests
-Twitch supplies the chat displayed in your tab. Song-request text is sent as a YouTube search query using temporary background tabs. The chosen channel ID is sent to StreamerSonglist to request its public repertoire and continuation pages. The extension does not operate a developer collection server and contains no developer analytics or advertising SDK. It does not sell data.
-These requests necessarily disclose your IP address and normal request/browser metadata to the destination services. Websites opened in tabs may use their existing browser sessions and cookies under their own policies. StreamerSonglist fetches explicitly omit credentials. The extension does not request the browser cookies permission, read passwords, or ask for an API key.</h2><h2>Local files and retention
-TXT/JSON exports are saved where your browser downloads files. JSON can include public requester names and session history; protect exported files and share them only as intended. Import reads the file you select locally; it is not uploaded to a developer server. Restore replaces current records and keeps one local pre-restore recovery copy.
-Records and preferences remain until you clear, replace or uninstall them; search results are reused for up to 24 hours but an expired cache entry is not necessarily physically removed immediately. Catalogue caches are cleared when the active channel changes after stopping. Turning off listening is not deletion.
-Clearing song history removes the selected channel&#x27;s completed/skipped records, not pending songs, counts, caches or recovery copies. Uninstalling normally removes extension-local storage, but does not remove exported files; delete those separately. Browser profile backups may retain copies.</h2><h2>Permissions and control
-Listening starts manually and stays locked to the selected streamer until Stop. Site access is used only for supported features described above. Language detection uses browser language preferences locally; language is not sent to the publisher. There is no cloud synchronization or account created by this extension.
-For questions, use the publisher/support profile linked above. Policy changes should be published alongside a new extension release. This extension is independent of Twitch, YouTube and StreamerSonglist; their own privacy policies govern their services.
-</h2></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Twitch Song Helper</title>
+  <style>
+    body {
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 22px;
+      font: 17px/1.75 system-ui, sans-serif;
+      color: #282333;
+    }
+    a { color: #604398; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="privacy-zh-TW.html">繁中</a> ·
+    <a href="privacy-en.html">English</a> ·
+    <a href="privacy-ja.html">日本語</a>
+  </nav>
+
+  <h1>Privacy Policy — Twitch Song Helper</h1>
+  <p>Last updated: October 30, 2026</p>
+
+  <h2>Purpose</h2>
+  <p>
+    Twitch Song Helper helps streamers manage song requests from a selected
+    Twitch channel's public chat. The extension starts monitoring after the
+    user chooses to start it.
+  </p>
+
+  <h2>Information processed and stored locally</h2>
+  <p>
+    The extension processes public chat messages to identify song requests.
+    It may store request text, public requester names, message IDs, song
+    titles and artists, queue and history entries, timestamps, session
+    counts, song corrections, local song lists, key markings and settings
+    in the browser's extension storage.
+  </p>
+  <p>
+    Ordinary chat messages are processed to detect requests; the extension
+    does not create a general archive of all chat messages. Public song-list
+    and search data may be cached locally.
+  </p>
+
+  <h2>Twitch</h2>
+  <p>
+    In automatic mode, the extension attempts to connect to Twitch chat using
+    an anonymous, read-only connection. It sends the selected channel ID and
+    an anonymous nickname to Twitch. If necessary, it can read the selected
+    channel's chat page instead. The extension does not ask for a Twitch
+    password or use the cookies permission.
+  </p>
+
+  <h2>StreamerSonglist</h2>
+  <p>
+    The selected channel ID is sent to StreamerSonglist to retrieve the
+    streamer's public song list. A copy may be stored locally for song-list
+    matching. Songs added to the extension's local song list are not
+    automatically uploaded to StreamerSonglist.
+  </p>
+
+  <h2>Apple iTunes and YouTube searches</h2>
+  <p>
+    When the extension searches for a song, it may send the song-request
+    text directly to Apple iTunes Search or YouTube to obtain song title,
+    artist or video suggestions.
+  </p>
+  <p>
+    The extension does not separately add the requester's name, Twitch
+    message ID or channel ID to the iTunes song search. If a requester
+    voluntarily includes a name, contact detail or other personal
+    information in the song-request text itself, that information may be
+    included in the search sent to the third-party service.
+  </p>
+  <p>
+    Apple, YouTube, Twitch and StreamerSonglist may receive the user's IP
+    address and ordinary connection information when the browser connects
+    to their services. Their own privacy policies apply.
+  </p>
+
+  <h2>Backups and retention</h2>
+  <p>
+    Song records and settings remain in local extension storage until the
+    user deletes or replaces them, or removes the extension. The user can
+    export and import JSON backups. Exported files may contain public
+    requester names and song-request text, so users should store and share
+    them carefully.
+  </p>
+  <p>
+    The extension does not automatically synchronize data to Google Drive.
+    Users may choose where to store exported backup files themselves.
+  </p>
+
+  <h2>Data collection by the developer</h2>
+  <p>
+    The developer does not operate a server to collect extension user data.
+    The extension does not include advertising or analytics SDKs. Information
+    is processed for managing song requests and is sent to the third-party
+    services described above when their functions are used.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Publisher and support:
+    <a href="https://www.twitch.tv/kousakilol">
+      https://www.twitch.tv/kousakilol
+    </a>
+  </p>
+
+  <p>
+    This is an independent extension and is not affiliated with Twitch,
+    Apple, YouTube or StreamerSonglist.
+  </p>
+</body>
+</html>
