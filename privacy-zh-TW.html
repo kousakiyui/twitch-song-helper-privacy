@@ -1,11 +1,110 @@
-<!doctype html><html lang="zh-TW"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy policy — Twitch Song Helper</title><style>body{max-width:850px;margin:40px auto;padding:0 22px;font:17px/1.75 system-ui;color:#282333}a{color:#604398}h1{line-height:1.35}</style><nav><a href="privacy-zh-TW.html">繁體中文</a> · <a href="privacy-en.html">English</a> · <a href="privacy-ja.html">日本語</a></nav><h1>隱私權政策 — twitch實況抓歌
-整理日期：2026 年 10 月 26 日。發布者／支援：<a href="https://www.twitch.tv/kousakilol">kousakilol</a>。</h1><h2>處理的資料
-你手動開始監聽後，插件讀取選定 Twitch 分頁中顯示的聊天室，處理公開顯示名稱、訊息識別碼及點歌內容。已接受的點歌、歌名與演出者、點歌及處理時間、已唱／略過狀態、場次計數、指令、偏好設定與歌單／搜尋快取會儲存在瀏覽器的擴充功能儲存空間。一般聊天僅暫時處理，保存最後收到訊息的時間，不建立完整聊天紀錄。</h2><h2>網路傳輸
-Twitch 提供分頁內的聊天內容。點歌文字會作為 YouTube 搜尋關鍵字，透過暫時的背景分頁搜尋；選定頻道 ID 會傳送到 StreamerSonglist，查詢公開歌單及後續分頁。本插件沒有開發者資料收集伺服器、開發者分析或廣告 SDK，不出售資料。
-上述網站仍會收到 IP 位址及一般請求／瀏覽器資訊。以分頁開啟的網站可能使用該網站既有的登入狀態與 Cookie，依其自身政策處理；StreamerSonglist 的程式化請求明確不攜帶憑證。插件未要求 cookies 權限，不讀取密碼，也不要求 API 金鑰。</h2><h2>本機檔案與保存
-TXT／JSON 匯出由瀏覽器下載至你選擇或預設的位置。JSON 可能含公開點歌者名稱與場次紀錄，請自行保護，僅在預期情況分享。匯入只在本機讀取所選檔案，不上傳到開發者伺服器。還原會取代目前資料，並在本機保留一份還原前備份。
-資料保留到你清除、取代或移除插件為止。搜尋結果最多重用 24 小時，但過期項目不一定立即從磁碟刪除。停止後切換頻道會清除使用中的歌單快取；停止監聽不等於刪除資料。
-「清除紀錄」只清除目前頻道已唱／已略過項目，不會刪除待唱、計數、快取與還原前備份。移除插件通常會刪除擴充功能本機儲存，但不會刪除已匯出的檔案；請另行刪除。瀏覽器設定檔備份仍可能保有副本。</h2><h2>權限與控制
-監聽需手動開始，並鎖定選定台主至你按停止。網站存取僅用於上述支援功能。瀏覽器語言偏好只在本機用於介面選語，不傳給開發者。插件不建立帳號，也不提供雲端同步。
-如有問題，請透過上述發布者／支援頁面提供的聯絡方式提出。政策如有變更應隨版本更新公開。本插件與 Twitch、YouTube、StreamerSonglist 無隸屬關係，各網站服務另依其隱私權政策運作。
-</h2></html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隱私權政策 — Twitch 實況抓歌</title>
+  <style>
+    body {
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 22px;
+      font: 17px/1.75 system-ui, sans-serif;
+      color: #282333;
+    }
+    a { color: #604398; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="privacy-zh-TW.html">繁中</a> ·
+    <a href="privacy-en.html">English</a> ·
+    <a href="privacy-ja.html">日本語</a>
+  </nav>
+
+  <h1>隱私權政策 — Twitch 實況抓歌</h1>
+  <p>最後更新：2026 年 10 月 30 日</p>
+
+  <h2>用途</h2>
+  <p>
+    Twitch 實況抓歌協助實況主管理指定 Twitch 頻道公開聊天室中的點歌。
+    插件會在使用者選擇開始監聽後運作。
+  </p>
+
+  <h2>處理與保存在本機的資料</h2>
+  <p>
+    插件會處理公開聊天室訊息，以辨識點歌。插件可能將點歌文字、
+    公開點歌者名稱、訊息 ID、歌名與歌手、排隊和歷史紀錄、
+    時間、本場計數、歌曲校正資料、本機歌單、Key 標記及設定，
+    儲存在瀏覽器的擴充功能儲存空間。
+  </p>
+  <p>
+    一般聊天訊息會被處理以辨識點歌；插件不會建立所有聊天訊息的
+    完整紀錄。公開歌單與搜尋資料可能暫存在本機。
+  </p>
+
+  <h2>Twitch</h2>
+  <p>
+    自動模式會先嘗試使用匿名、唯讀連線連接 Twitch 聊天室，
+    並向 Twitch 傳送所選頻道 ID 和匿名暱稱。必要時，
+    插件可以改為讀取所選頻道的聊天室網頁。
+    插件不要求使用者輸入 Twitch 密碼，也不使用 cookies 權限。
+  </p>
+
+  <h2>StreamerSonglist</h2>
+  <p>
+    插件會將所選頻道 ID 傳送至 StreamerSonglist，
+    以取得該實況主的公開歌單，並可能在本機保存一份供比對使用。
+    加入插件本機歌單的歌曲不會自動上傳至 StreamerSonglist。
+  </p>
+
+  <h2>Apple iTunes 與 YouTube 搜尋</h2>
+  <p>
+    插件搜尋歌曲時，可能將點歌文字直接傳送至 Apple iTunes Search
+    或 YouTube，以取得歌名、歌手或影片候選資料。
+  </p>
+  <p>
+    進行 iTunes 歌曲搜尋時，插件不會另外附上點歌者名稱、
+    Twitch 訊息 ID 或頻道 ID。若觀眾自行在點歌文字中輸入姓名、
+    聯絡方式或其他個人資訊，這些內容可能隨搜尋文字一起傳送
+    給第三方服務。
+  </p>
+  <p>
+    當瀏覽器連接 Apple、YouTube、Twitch 或 StreamerSonglist 時，
+    這些服務可能收到使用者的 IP 位址及一般連線資訊；
+    各服務的隱私權政策適用。
+  </p>
+
+  <h2>備份與保存</h2>
+  <p>
+    歌曲紀錄與設定會保存在瀏覽器的擴充功能儲存空間中，
+    直到使用者刪除、取代資料或移除插件。使用者可匯出及匯入
+    JSON 備份。匯出的檔案可能包含公開點歌者名稱及點歌文字，
+    請妥善保存並留意分享對象。
+  </p>
+  <p>
+    插件不會自動同步資料至 Google 雲端硬碟。
+    使用者可自行決定匯出備份檔案的保存位置。
+  </p>
+
+  <h2>開發者資料收集</h2>
+  <p>
+    開發者沒有架設伺服器收集插件使用者資料，
+    插件也沒有加入廣告或分析 SDK。資料用於管理點歌；
+    使用上述第三方服務的功能時，相關資料會依本政策說明傳送。
+  </p>
+
+  <h2>聯絡方式</h2>
+  <p>
+    發布者及支援：
+    <a href="https://www.twitch.tv/kousakilol">
+      https://www.twitch.tv/kousakilol
+    </a>
+  </p>
+
+  <p>
+    本插件為獨立專案，與 Twitch、Apple、YouTube 或
+    StreamerSonglist 無隸屬關係。
+  </p>
+</body>
+</html>
